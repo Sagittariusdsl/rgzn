@@ -80,7 +80,7 @@ def plot_decision_regions(X, y, classifier, resolution=0.02):
 if __name__ == '__main__':
     ppn = Perceptron(eta=0.1, n_iter=10)
     x, y =ppn.getData()
-    ppn.fit(x, y )
+    ppn.fit(x, y)
     plot_decision_regions(x, y, ppn, resolution=0.02)
     plt.xlabel('花瓣长度')
     plt.ylabel('花径长度')
